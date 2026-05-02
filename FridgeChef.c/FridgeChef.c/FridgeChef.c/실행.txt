@@ -1,5 +1,0 @@
-cd "c:\Users\dbstm\source\repos\FridgeChef.c\FridgeChef.c"
-
-gcc -std=c11 -Wall -o FridgeChef_week1.exe -finput-charset=UTF-8 -fexec-charset=UTF-8 ".\FridgeChef_1주차.c"
-
-.\FridgeChef_week1.exe
