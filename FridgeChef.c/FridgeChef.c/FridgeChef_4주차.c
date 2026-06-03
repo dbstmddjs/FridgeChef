@@ -658,7 +658,7 @@ void checkAlert(void) {
  * 레시피 추천 — 매칭률 높은 순 전체 출력
  * ════════════════════════════════════════════════════════════════════ */
 
-static int hasIngredient(const char *ingName) {
+static int haveItem(const char *ingName) {
     int i, k;
     char hay[50], needle[50];
     strcpy(needle, ingName);
@@ -705,7 +705,7 @@ void showRecipes(void) {
         float score;
 
         for (j = 0; j < recipes[i].ingCount; j++)
-            if (hasIngredient(recipes[i].ingredients[j]))
+            if (haveItem(recipes[i].ingredients[j]))
                 matched++;
 
         score = (recipes[i].ingCount > 0)
@@ -745,7 +745,7 @@ void showRecipes(void) {
 
         printf("        재료: ");
         for (j = 0; j < recipes[ri].ingCount; j++) {
-            int have = hasIngredient(recipes[ri].ingredients[j]);
+            int have = haveItem(recipes[ri].ingredients[j]);
             if (!have) printf("[없음]");
             printf("%s", recipes[ri].ingredients[j]);
             if (j < recipes[ri].ingCount - 1) printf(", ");
