@@ -1,12 +1,7 @@
-cd "c:\Users\dbstm\source\repos\FridgeChef.c\FridgeChef.c"
-
-gcc -std=c11 -Wall -o FridgeChef_week4.exe -finput-charset=UTF-8 -fexec-charset=UTF-8 ".\FridgeChef_4주차.c"
-
-.\FridgeChef_week4.exe
-
 cd "c:\Users\user\source\repos\FridgeChef\FridgeChef-main\FridgeChef.c\FridgeChef.c"
 
 gcc -std=c11 -Wall -o FridgeChef_week4.exe -finput-charset=UTF-8 -fexec-charset=UTF-8 ".\FridgeChef_4주차.c"
 
 .\FridgeChef_week4.exe
+
 cd "c:\Users\user\source\repos\FridgeChef\FridgeChef-main\FridgeChef.c\FridgeChef.c"; gcc -std=c11 -Wall -o FridgeChef_week4.exe -finput-charset=UTF-8 -fexec-charset=UTF-8 ".\FridgeChef_4주차.c"; .\FridgeChef_week4.exe
